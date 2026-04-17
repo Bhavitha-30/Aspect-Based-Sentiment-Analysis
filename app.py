@@ -198,7 +198,7 @@ def load_or_train_model():
     """Load or train the sentiment classification model"""
     with st.spinner("🔄 Loading and training model... This may take a minute."):
         # Load dataset
-        df = pd.read_csv("Dataset-SA.csv")
+        df = pd.read_csv("Dataset-SA(1).csv")
         
         # Data cleaning
         df = df.dropna(subset=['Review', 'Sentiment'])
